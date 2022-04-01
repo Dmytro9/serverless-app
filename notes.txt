@@ -10,8 +10,8 @@ Comunication in Microservices:
 
 1. Install AWS cli  (search install aws cli)
 2. Install Serverless framework (https://www.serverless.com/framework/docs/getting-started) (check instalation  sls --version)
-3. Create new User IAM - in AWS
-4. Configure aws on your mashine running - `aws configure` 
+3. Create new User IAM - in AWS, log in with this user
+4. Configure aws on your mashine running - `aws configure` with created IAM user 
 
 
 ### Commands
@@ -20,9 +20,9 @@ Used template: https://github.com/arielweinberger/sls-base
 
 ### Deploy: 
 `serverless deploy`
-go to CloudFormation service
-
+go to CloudFormation service to check
+` serverless deploy -f <fn_name>` - function deploy
 
 Remove app - `serverless remove`
 
-
+Function - createAuction(event, context): event (includes all request data (body, path, query, headers...)); context (lambda function metadata)

@@ -1,2 +1,1 @@
-# serverless-app
-Serverless-app
+# Serverless-app
