@@ -1,0 +1,28 @@
+Serverless - not without servers, it's about focusing on delivering functionality and not on scaling the servers. 
+Most of the services used with this architecture are auto-scalable.
+
+
+Comunication in Microservices: 
+ - Pub/Sub
+ - Events streams
+ - Message queues (Kafka, RabitMQ ...)
+
+
+1. Install AWS cli  (search install aws cli)
+2. Install Serverless framework (https://www.serverless.com/framework/docs/getting-started) (check instalation  sls --version)
+3. Create new User IAM - in AWS
+4. Configure aws on your mashine running - `aws configure` 
+
+
+### Commands
+To create a project: https://www.serverless.com/framework/docs/providers/aws/cli-reference/create
+Used template: https://github.com/arielweinberger/sls-base
+
+### Deploy: 
+`serverless deploy`
+go to CloudFormation service
+
+
+Remove app - `serverless remove`
+
+
