@@ -30,7 +30,7 @@ Function - createAuction(event, context): event (includes all request data (body
 
 Adding DynamoDB (in .yaml) (infrastructure as code by specifying fields)
 
-CloudWatch - to see logs (success OR errors - aws logger sevice)
+CloudWatch -> Logs -> Log groups - to see logs (success OR errors - aws logger sevice)
 
 Add permissions to write to DynamoDB (in .yaml)
 

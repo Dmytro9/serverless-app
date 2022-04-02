@@ -1,4 +1,3 @@
-import { v4 as uuid } from "uuid";
 import AWS from "aws-sdk";
 import middy from "@middy/core";
 import httpJsonBodyParser from "@middy/http-json-body-parser";
@@ -32,7 +31,7 @@ async function getAuction(event, context) {
 
   return {
     statusCode: 200,
-    body: JSON.stringify(auctions),
+    body: JSON.stringify(auction),
   };
 }
 
