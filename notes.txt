@@ -1,6 +1,7 @@
 Serverless - not without servers, it's about focusing on delivering functionality and not on scaling the servers. 
 Most of the services used with this architecture are auto-scalable.
 
+VCode Extension - Serverless IDE 
 
 Comunication in Microservices: 
  - Pub/Sub
@@ -42,3 +43,7 @@ Add permissions to write to DynamoDB (in .yaml)
 
 
 then check in IAM-> roles -> auction-service-dev-eu-west-1-lambdaRole (your service role)
+
+- #{AWS::Region} - vars which are possibile to use adding due to: serverless-pseudo-parameters plugin (in .yaml)
+
+
