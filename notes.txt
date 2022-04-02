@@ -26,3 +26,19 @@ go to CloudFormation service to check
 Remove app - `serverless remove`
 
 Function - createAuction(event, context): event (includes all request data (body, path, query, headers...)); context (lambda function metadata)
+
+Adding DynamoDB (in .yaml) (infrastructure as code by specifying fields)
+
+CloudWatch - to see logs (success OR errors - aws logger sevice)
+
+Add permissions to write to DynamoDB (in .yaml)
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action: 
+        - dynamodb:PutItem
+      Resource: 
+        - arn:aws:dynamodb:#{AWS::Region}:#{AWS::AccountId}:table/AuctionsTable
+
+
+then check in IAM-> roles -> auction-service-dev-eu-west-1-lambdaRole (your service role)
