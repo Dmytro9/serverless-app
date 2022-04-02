@@ -22,7 +22,7 @@ Used template: https://github.com/arielweinberger/sls-base
 ### Deploy: 
 `serverless deploy`
 go to CloudFormation service to check
-` serverless deploy -f <fn_name>` - function deploy
+` serverless deploy -f <fn_name>` - function deploy if we have change only function
 
 Remove app - `serverless remove`
 
