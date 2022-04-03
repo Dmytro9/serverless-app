@@ -17,8 +17,8 @@ AuctionsTable:
       - IndexName: statusAndEndDate
         KeySchema:
           - AttributeName: status
-            KeySchema: HASH
+            KeyType: HASH
           - AttributeName: endingAt
-            KeySchema: RANGE
+            KeyType: RANGE
         Projection:
           ProjectionType: ALL
