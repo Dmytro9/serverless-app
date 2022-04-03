@@ -52,5 +52,5 @@ Amazon EventBridge (AWS) -> Rules - to check the specified roles (cron/rate) wit
 
 `serverless logs -f processAuctions` - to check the logs of handler 
 `serverless logs -f processAuctions --startTime 1m` - to check the logs starting from ... (1h ...)  
-`serverless invoke -f processAuctions -l` - to run the handler manualy 
+`serverless invoke -f processAuctions -l` - to run the handler manually 
 
