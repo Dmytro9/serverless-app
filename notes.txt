@@ -28,11 +28,11 @@ Remove app - `serverless remove`
 
 Function - createAuction(event, context): event (includes all request data (body, path, query, headers...)); context (lambda function metadata)
 
-Adding DynamoDB (in .yaml) (infrastructure as code by specifying fields)
+## Adding DynamoDB (in .yaml) (infrastructure as code by specifying fields)
 
-CloudWatch -> Logs -> Log groups - to see logs (success OR errors - aws logger sevice)
+## CloudWatch -> Logs -> Log groups - to see logs (success OR errors - aws logger sevice)
 
-Add permissions to write to DynamoDB (in .yaml)
+## Add permissions to write to DynamoDB (in .yaml)
 
   iamRoleStatements:
     - Effect: Allow
@@ -46,4 +46,11 @@ then check in IAM-> roles -> auction-service-dev-eu-west-1-lambdaRole (your serv
 
 - #{AWS::Region} - vars which are possibile to use adding due to: serverless-pseudo-parameters plugin (in .yaml)
 
+
+## processAuctions (cron or rate handler) which runs every 1 minute
+Amazon EventBridge (AWS) -> Rules - to check the specified roles (cron/rate) with target or watcher of specific types of events 
+
+`serverless logs -f processAuctions` - to check the logs of handler 
+`serverless logs -f processAuctions --startTime 1m` - to check the logs starting from ... (1h ...)  
+`serverless invoke -f processAuctions -l` - to run the handler manualy 
 
