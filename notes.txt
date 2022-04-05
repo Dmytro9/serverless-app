@@ -55,8 +55,20 @@ Amazon EventBridge (AWS) -> Rules - to check the specified roles (cron/rate) wit
 `serverless invoke -f processAuctions -l` - to run the handler manually 
 
 
-##Validation:
+##Validation (query, body ...):
 @middy/validator used with @middy/http-error-handler middleware but it doesn't provide detailed error message 
 so - https://github.com/dbartholomae/middy-middleware-json-error-handler seems to be compatibile and can be used as an error middleware
 providing possibility to return detailed error message.
+
+##Authentication (Auth0.com is used):
+after creating a user to get the token:
+curl --location --request POST 'https://YOUR_AUTH0_DOMAIN/oauth/token' \
+--header 'Content-Type: application/x-www-form-urlencoded' \
+--data-urlencode 'client_id=YOUR_AUTH0_CLIENT_ID' \
+--data-urlencode 'username=YOUR_USERNAME' \
+--data-urlencode 'password=YOUR_PASSWORD' \
+--data-urlencode 'grant_type=password' \
+--data-urlencode 'scope=openid'
+
+
 
