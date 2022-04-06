@@ -74,5 +74,9 @@ curl --location --request POST 'https://YOUR_AUTH0_DOMAIN/oauth/token' \
 
 ##Notification-service
 used Amazon Simple Email Service (SES)
++ SQS
+
+after manually sending message via SQS to check the logs - `serverless logs -f sendMail -t`
+ 
 
 
