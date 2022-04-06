@@ -60,6 +60,7 @@ Amazon EventBridge (AWS) -> Rules - to check the specified roles (cron/rate) wit
 so - https://github.com/dbartholomae/middy-middleware-json-error-handler seems to be compatibile and can be used as an error middleware
 providing possibility to return detailed error message.
 
+
 ##Authentication (Auth0.com is used):
 after creating a user to get the token:
 curl --location --request POST 'https://YOUR_AUTH0_DOMAIN/oauth/token' \
@@ -70,5 +71,8 @@ curl --location --request POST 'https://YOUR_AUTH0_DOMAIN/oauth/token' \
 --data-urlencode 'grant_type=password' \
 --data-urlencode 'scope=openid'
 
+
+##Notification-service
+used Amazon Simple Email Service (SES)
 
 
