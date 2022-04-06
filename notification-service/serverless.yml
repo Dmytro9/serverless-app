@@ -16,10 +16,10 @@ provider:
 functions:
   sendMail:  
     handler: src/handlers/sendMail.handler
-    # events: 
-    #   - http: 
-    #       method: GET
-    #       path: /hello
+    events: 
+      - http: 
+          method: GET
+          path: /sendmail
 
 
 custom:
