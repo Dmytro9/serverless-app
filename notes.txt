@@ -19,6 +19,7 @@ Comunication in Microservices:
 To create a project: https://www.serverless.com/framework/docs/providers/aws/cli-reference/create
 Used template: https://github.com/arielweinberger/sls-base
 
+
 ### Deploy: 
 `serverless deploy`
 go to CloudFormation service to check
@@ -28,9 +29,12 @@ Remove app - `serverless remove`
 
 Function - createAuction(event, context): event (includes all request data (body, path, query, headers...)); context (lambda function metadata)
 
+
 ## Adding DynamoDB (in .yaml) (infrastructure as code by specifying fields)
 
+
 ## CloudWatch -> Logs -> Log groups - to see logs (success OR errors - aws logger sevice)
+
 
 ## Add permissions to write to DynamoDB (in .yaml)
 
