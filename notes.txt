@@ -80,3 +80,15 @@ after manually sending message via SQS to check the logs - `serverless logs -f s
  
 
 
+
+##AWS Services used:
+Cloud Watch - logger
+CloudFormation - infrastructure as code
+Lambda - handlers
+Amazon SES (somple email service) - send email
+Simple Queue Service - messenging
+DynamoDB - db
+Amazon EventBridge - setup cron
+IAM - create users and roles
+S3 - storage
+
