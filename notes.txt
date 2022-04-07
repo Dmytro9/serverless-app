@@ -83,6 +83,10 @@ used Amazon Simple Email Service (SES)
 after manually sending message via SQS to check the logs - `serverless logs -f sendMail -t`
  
 
+##Client part
+Using Serverless App with Frontend
+https://github.com/arielweinberger/sls-course-frontend
+
 
 
 ##AWS Services used:
